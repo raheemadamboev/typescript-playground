@@ -1,9 +1,8 @@
-let some: unknown;
-let other: string;
-
-some = 7;
-some = "Raheem";
-
-if (typeof some === "string") {
-  other = some;
+function throwError(message: string, code: number): never {
+  throw {
+    message: message,
+    code: code,
+  };
 }
+
+console.log(throwError("error", 500));
