@@ -6,9 +6,17 @@ function printResult(result: number): void {
   console.log(`Result is ${result}`);
 }
 
-function doNothing() : undefined {
-  return;
-}
+let some: Function;
 
-printResult(add(15, 18));
-printResult(doNothing()); // strange accepting undefined
+some = add;
+console.log(some(15, 7));
+
+some = printResult;
+console.log(some(15, 7));
+
+let other: (a: number, b: number) => number;
+
+other = add;
+console.log(other(7 , 3));
+
+//other = printResult;
