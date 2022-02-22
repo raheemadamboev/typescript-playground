@@ -1,9 +1,10 @@
-// const person: {
-//   name: string;
-//   age: number;
-//   hobbies: string[];
-// } = {
-const person = {
+const person: {
+  name: string;
+  age: number;
+  hobbies: string[];
+  role: [number, string];
+} = {
+//const person = {
   name: "Raheem",
   age: 21,
   hobbies: ["Football", "Music"],
@@ -12,8 +13,9 @@ const person = {
 
 console.log(`${person.name} ${person.age}`);
 
-person.role.push("i feel it coming");
-person.role[1] = 15;
+//person.role.push("i feel it coming");
+//person.role[1] = 15;
+//person.role = [15, "ronaldo", "messi"]
 
 console.log(JSON.stringify(person.role));
 
