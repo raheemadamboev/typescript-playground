@@ -8,3 +8,5 @@ function throwError(message: string, code: number): never {
 console.log("raheem");
 
 console.log(throwError("error", 500));
+
+const raheem = "Raheem";
